@@ -3,6 +3,7 @@
 ## Projects
 
 ## Investigating Netflix Movies
+
 ### Objective
 The objective of this project was to conduct exploratory data analysis on Netflix data to uncover insights into movies from the 1990s, a pivotal decade in the modern film industry, and provide answers to specific business questions.
 ### Tools
