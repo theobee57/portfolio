@@ -1,21 +1,27 @@
-# Data Science is cool!
+# My Data Science Portfolio
 
-## Wow, Python is powerful! Also very easy to use!
+## Projects
 
-### I love the data visualization tools.
-What is going on here?
+### Investigating Netflix Movies
+  
+### NY City Public School Results
 
-### Main Skills
-1. Python
-2. SQL
+### Visualizing the History of Nobel Prize Winners
 
-### Everyday tools
-- EDA
-- Data Wrangling
-- Data Visualization
+### Analyzing Crime in LA
 
-|Country|Capital|Technology|
-|----|----|----|
-|USA|Washington DC|Java|
-|Canada|Ottawa|Python|
-|Germany|Berlin|SQL|
+### Customer Analytics: Preparing Data for Modelling
+
+### Exploring Airbnb Market Trends
+
+### Modeling Car Insurance Claim Outcomes
+
+### Hypothesis Testing With Men's and Women's Soccer Matches
+
+### Predictive Modeling for Agriculture
+
+###  Clustering Antarctic Penguin Species
+
+### Predicting Movie Rental Durations 
+
+
