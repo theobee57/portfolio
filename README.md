@@ -6,6 +6,7 @@
 
 ### Objective
 The objective of this project was to conduct exploratory data analysis on Netflix data to uncover insights into movies from the 1990s, a pivotal decade in the modern film industry, and provide answers to specific business questions.
+i
 ### Tools
 I  used Pandas for manipulating the dataset, Matplotlib for visualization, and Python for programming.
 ### Procedure
