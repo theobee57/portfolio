@@ -19,7 +19,7 @@ I applied a second filter to isolate the 'Action' genre. Then I iterated through
 The results had a direct impact on Netflix's content strategy, enhancing user experience and refining its market position.
 
 ## New York City Public School Results
-![Netflix Movies of the 1990s](/images/Netflix.png) 
+![Tops Schools in New York City](/images/NewYorkSchools.png) 
 The project's objective was to evaluate the performance of New York City public schools and provide policymakers, government officials, parents, and other stakeholders with actionable insights and answers to pertinent questions, especially
 - Which schools have the best math results?
 - What are the top ten schools based on combined SAT scores?
