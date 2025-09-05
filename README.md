@@ -19,6 +19,7 @@ I applied a second filter to isolate the 'Action' genre. Then I iterated through
 The results had a direct impact on Netflix's content strategy, enhancing user experience and refining its market position.
 
 ## New York City Public School Results
+![Top Ten Schools of New York City](/images/New York Schools.png)
 The project's objective was to evaluate the performance of New York City public schools and provide policymakers, government officials, parents, and other stakeholders with actionable insights and answers to pertinent questions, especially
 - Which schools have the best math results?
 - What are the top ten schools based on combined SAT scores?
@@ -29,8 +30,6 @@ After importing data from a CSV file, I used Pandas DataFrames to perform a thor
 Throughout the project, I employed data visualization tools from the Matplotlib and Seaborn packages to present the findings clearly and highlight significant trends.
 
 To determine the schools with the best math results, I subsetted the DataFrame according to a given metric (math score greater than 80).
-
-![Top Ten Schools of New York City](/images/New York Schools.png)
 
 To identify the top ten schools, I created a new column in the original DataFrame that represents the total score. This total score is calculated by summing the three existing SAT columns: Math, Reading, and Writing. Next, I sorted the DataFrame by this new column in descending order and selected the top ten rows.
 
