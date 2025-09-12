@@ -19,6 +19,21 @@ At the end of the project, I formally communicated my findings and recommendatio
 
 I showed how my recommendation directly impacts the business by increasing revenue by 40%.
 
+## Predictive Modeling for Agriculture
+The objective ot the project was to determine which soil feature (nitrogen ('N'), phosphorus ('P'), potassium ('K'), or pH) serves as the best predictor of crop type.
+
+My first step involved thoroughly cleaning and validating the raw data to ensure its integrity. I accomplished this using Pandas, checking for correct data types, missing values, and other quality issues across all fields.
+
+Next, I imported the necessary functions from the scikit-learn package, including LogisticRegression, train_test_split, and metrics.
+
+Holding the dataset in a Pandas DataFrame, I organized the data into features and the target variable, which is the crop type.
+
+I used the train_test_split function to divide the dataset into training and testing sets.
+
+For each feature ('N', 'P', 'K', and pH), I trained a logistic regression model and calculated the F1 score. Finally, I compared the F1 scores to identify the best predictor.
+
+My analysis offered valuable insights for agricultural planning, assisting farmers in selecting the most appropriate crops to cultivate.
+
 ## Investigating Netflix Movies
 ![Netflix Movies of the 1990s](/images/Netflix.png) 
 ### Objective
@@ -71,8 +86,6 @@ The results of this analysis provided actionable insights that can inform educat
 ## Modeling Car Insurance Claim Outcomes
 
 ## Hypothesis Testing With Men's and Women's Soccer Matches
-
-### Predictive Modeling for Agriculture
 
 ##  Clustering Antarctic Penguin Species
 
