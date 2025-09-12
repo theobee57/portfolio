@@ -2,7 +2,7 @@
 
 ## Projects
 ## New Product Sales Strategy
-
+![Sales Strategies](/images/Sales_strategies.png)       
 The project had two main objectives:
 - Determine the optimal sales strategy for a new product launch
 - Establish a metric to evaluate sales revenue
