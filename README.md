@@ -1,6 +1,23 @@
 # My Data Science Portfolio
 
 ## Projects
+## New Product Sales Strategy
+
+The project had two main objectives:
+- Determine the optimal sales strategy for a new product launch
+- Establish a metric to evaluate sales revenue
+
+My initial step was to perform a thorough cleaning and validation of raw data to ensure data integrity. I did that by using Pandas to check for correct data types, missing values, and other quality issues across all fields.
+
+For exploratory data analysis, I utilized visualization tools from the Matplotlib and Seaborn packages along with Python and Pandas.
+
+I used boxplots to compare performance across different strategies, line graphs to identify revenue trends over a six-week product launch, and heatmaps to determine the correlations between revenue and other factors.
+
+My analysis identified email campaigns as the most effective sales strategy. Based on this finding, I recommended using "Average Revenue per Email Customer" as a metric to monitor revenue. Then, I established a baseline value for this metric.
+
+At the end of the project, I formally communicated my findings and recommendations with a 10-minute presentation, which I delivered to sales representatives, providing them with a clear understanding of the project's insights and recommendations.
+
+I showed how my recommendation directly impacts the business by increasing revenue by 40%.
 
 ## Investigating Netflix Movies
 ![Netflix Movies of the 1990s](/images/Netflix.png) 
