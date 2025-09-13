@@ -98,6 +98,7 @@ The results of this analysis provided actionable insights that can inform educat
 ## Visualizing the History of Nobel Prize Winners
 
 ## Analyzing Crime in LA
+![Crimes Committed in LA](/images/LA_crimes.png) 
 The objective of this project was to conduct an exploratory data analysis on a crime dataset to answer three specific questions for the Los Angeles Police Department (LAPD): 
 
 1. Which hour of the day has the highest number of crimes committed?
