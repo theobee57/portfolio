@@ -34,6 +34,26 @@ For each feature ('N', 'P', 'K', and pH), I trained a logistic regression model 
 
 My analysis offered valuable insights for agricultural planning, assisting farmers in selecting the most appropriate crops to cultivate.
 
+## Employee Analytics: Preparing Data for Modelling
+The project's objectives were to
+ Prepare the raw employee data for analytical tasks by ensuring that each column has the correct data type 
+filter the dataset according to a given subset of interest.
+
+The focus of this project was on data type conversion. I systematically converted columns to more appropriate data types to ensure proper handling. Numerical columns, such as "Employee ID" and "Training Hours," were converted to either int32 or float16 as needed. 
+
+Also, categorical columns, like gender and department, were transformed into the category data type.
+
+For columns with a natural order (e.g., Small, Medium, Large), I explicitly defined the order of categories using cat.set_categories.
+
+For columns that represent binary choices, I renamed them to be more descriptive (True/False) and then converted them to the Boolean data type.
+
+To prevent altering the original data, I worked with a copy stored in a Pandas dataframe.
+
+After finishing the data type conversion, I filtered the dataframe based on specific criteria that had been established beforehand.
+
+By the end of the project, the dataset contained only the desired subset of data, with each column having the correct data type.
+
+The data was thus ready for both analytical and machine learning tasks.
 ## Investigating Netflix Movies
 ![Netflix Movies of the 1990s](/images/Netflix.png) 
 ### Objective
@@ -78,8 +98,22 @@ The results of this analysis provided actionable insights that can inform educat
 ## Visualizing the History of Nobel Prize Winners
 
 ## Analyzing Crime in LA
+The objective of this project was to conduct an exploratory data analysis on a crime dataset to answer three specific questions for the Los Angeles Police Department (LAPD): 
 
-## Customer Analytics: Preparing Data for Modelling
+1. Which hour of the day has the highest number of crimes committed?
+2. Which area experiences the most nighttime crimes?
+3. What is the frequency of crimes across different age groups?
+
+To ensure data integrity, I performed a thorough cleaning and validation of the raw data. I utilized Pandas to verify the correctness of data types, identify missing values, and address other quality issues across all fields.
+
+First, I created a new integer column to store the hour of the day. I then used a Seaborn count plot to visualize the number of crimes occurring during each hour.
+
+To identify the area with the highest number of nighttime crimes, I filtered the dataset to focus on incidents that took place between 10 PM and 4 AM (specifically during the hours 22, 23, 0, 1, 2, and 3). Next, I grouped the filtered data by area name and counted the number of crimes that occurred in each area.
+
+Next, I categorized the "Victim Age" column into predefined age groups using the pd.cut() function. Then, I applied value_counts() to the new "Age Group" column to determine the frequency of crimes within each age category, highlighting the most frequently victimized group.
+
+This project successfully identified patterns in criminal behavior in Los Angeles. The LAPD can utilize the insights (the answers to the three questions)  to allocate resources effectively and address crime in various areas.
+
 
 ## Exploring Airbnb Market Trends
 
