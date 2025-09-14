@@ -138,6 +138,20 @@ As required by the business, I calculated the key metrics and stored them in a d
 Due to the high demand for temporary lodging in New York City, the insights gained from this project will help visitors make informed choices among the numerous Airbnb listings available. Besides, Airbnb can use this information to refine its business model.
 
 ## Modeling Car Insurance Claim Outcomes
+The objective of the project was to analyze an auto insurance dataset to identify the most significant feature, such as driving experience or vehicle type, that predicts whether a customer will file a claim on their policy.
+
+My first step involved thoroughly cleaning and validating raw data to ensure data integrity. I used Pandas to check data types, missing values, and other quality issues across all fields.
+
+I imputed the missing values for the credit_score and annual_mileage columns using the mean of their respective columns.
+
+I used Python to achieve the following tasks programmatically:
+
+1. Trained a univariate logistic regression model for each feature using `statsmodels.formula.api.logit`.
+2. Created a confusion matrix based on the model's predictions.
+3. Calculated accuracy using the formula (TP + TN) / (TP + TN + FP + FN), and stored the results in a list.
+4. Identified the best-performing feature along with its corresponding accuracy from the list.
+
+The project identified the single best predictor of a customer's likelihood of making an auto insurance claim. This insight is invaluable for the project owner.
 
 ## Hypothesis Testing With Men's and Women's Soccer Matches
 
