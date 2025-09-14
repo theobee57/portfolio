@@ -118,6 +118,24 @@ This project successfully identified patterns in criminal behavior in Los Angele
 
 
 ## Exploring Airbnb Market Trends
+This project had two main objectives: to merge three different Airbnb datasets, each with its own file type and information, and calculate key business metrics based on the consolidated data, which include:
+ The average price of room listings
+The number of listings categorized as "Private Room"
+The most recent review dates for the rooms
+
+I began by loading three datasets: a CSV file containing pricing information, an Excel file with details about room types, and a TSV file that included review dates.
+
+After merging these datasets into a single dataframe using the "listing_id" column as a shared key, I selected the columns that were of interest: "last_review," "room_type," and "price."
+
+To clean the data, I made several changes. First, I converted the price column from a string format (e.g., "140 dollars") to an integer (140) to enable mathematical and statistical operations on this column.
+
+Next, I altered the "last_review_date" column from a string format into a suitable date format using Pandas `to_datetime` function, which allows for date operations on this column.
+
+Also, I standardized the "room_type" column by converting all entries to lowercase, ensuring consistency (for example, changing "Private room" and "private room" to "private room").
+
+As required by the business, I calculated the key metrics and stored them in a dictionary for further analysis.
+
+Due to the high demand for temporary lodging in New York City, the insights gained from this project will help visitors make informed choices among the numerous Airbnb listings available. Besides, Airbnb can use this information to refine its business model.
 
 ## Modeling Car Insurance Claim Outcomes
 
