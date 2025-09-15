@@ -100,27 +100,27 @@ I began by thoroughly cleaning and validating the raw data, checking for appropr
 
 I employed Python programming along with Pandas for data manipulation and Numpy for numerical/statistical operations to find the required answers.
 
- # Question 1 - What is the most commonly awarded gender and birth country?
+ ### Question 1 - What is the most commonly awarded gender and birth country?
 
 I identified the most common gender among Nobel Prize winners by applying the `value_counts()` method to the "sex" column, sorting the results in descending order. This analysis revealed that the most frequent gender is male. Similarly, I used the same method on the "birth_country" column to determine the most common country, which is the USA.
 
-# Question 2: Which decade had the highest ratio of U.S.-born Nobel Prize winners to total winners across all categories?
+### Question 2: Which decade had the highest ratio of U.S.-born Nobel Prize winners to total winners across all categories?
 
 I created a Boolean column, "USA_winner", to flag winners from the US. I then made a new column called "decade" by rounding the year down to the nearest decade. 
 
 I organized the data by decade and calculated the average of the USA_winner column, which reflects the proportion of US winners in each decade. Ultimately, I identified that the decade with the highest proportion was the year 2000.
 
-# Question 3: In which decade and Prize category combination was the proportion of female laureates the highest?
+### Question 3: In which decade and Prize category combination was the proportion of female laureates the highest?
 
 I created a Boolean column named "female" to indicate female winners. Next, I grouped the data by both decade and category and calculated the mean proportion of female winners for each unique combination. 
 
 Finally, I identified the combination with the highest mean, which was 2020 in the Literature category.
 
-# Question 4: Who was the first woman to receive a Nobel Prize, and in which category did she win?
+### Question 4: Who was the first woman to receive a Nobel Prize, and in which category did she win?
 
 I filtered the DataFrame to include only female laureates. After that, I sorted this subset in ascending order by year. Finally, I extracted the full name and category of the first entry in the sorted list to identify Marie Curie and her Physics prize correctly.
 
-# Question 5: Which individuals or organizations have won multiple Nobel Prizes?
+### Question 5: Which individuals or organizations have won multiple Nobel Prizes?
 
 I counted the occurrences of each name in the "full_name" column and filtered the results to include only those names that appeared more than once. The following list shows the names that met this criterion:
 - Comité international de la Croix-Rouge (International Committee of the Red Cross)
