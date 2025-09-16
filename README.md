@@ -187,6 +187,21 @@ I used Python to achieve the following tasks programmatically:
 The project identified the single best predictor of a customer's likelihood of making an auto insurance claim. This insight is invaluable for the project owner.
 
 ## Hypothesis Testing With Men's and Women's Soccer Matches
+The objective of this project was to test the hypothesis: Women's World Cup matches have more goals than men's World Cup matches.
+
+I loaded two datasets for men's and women's soccer results. I filtered both datasets to include only matches from the FIFA World Cup held after January 1, 2002.
+
+I added a new column named goals_scored to both filtered datasets by summing the home_score and away_score. Additionally, I included a group column to classify matches as either "men's" or "women's".
+
+I created histograms of the goals_scored column for both men's and women's matches to visualize the distribution of goals scored and assess whether the data is normally distributed.
+
+Since the men's and women's matches are independent, and the goals scored are not normally distributed, I conducted a Wilcoxon-Mann-Whitney U test to compare the two groups.
+
+I conducted the test using two different libraries: Pingouin and SciPy.stats, both configured with the parameter alternative= "greater," which establishes a right-tailed test. This tests the specific hypothesis that the median number of goals in women's matches is greater than the median number of goals in men's matches.
+
+I extracted the p-value from the Pingouin test results and compared it to a predefined confidence level of 0.01.
+
+The p-value was less than the confidence level, indicating that the null hypothesis should be rejected.
 
 ##  Clustering Antarctic Penguin Species
 
