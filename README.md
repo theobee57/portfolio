@@ -204,7 +204,23 @@ I extracted the p-value from the Pingouin test results and compared it to a pred
 The p-value was less than the confidence level, indicating that the null hypothesis should be rejected.
 
 ##  Clustering Antarctic Penguin Species
+The objective of this project was to analyze a dataset of Antarctic penguins to categorize them based on their physical features.
 
+To accomplish this, I utilized Python and several key packages: Pandas for data cleaning, validation, and manipulation; StandardScaler from the sklearn.preprocessing library; KMeans from the sklearn.cluster library, and Matplotlib for visualization.
+
+The primary task was to apply K-Means clustering to group penguins based on their physical characteristics. However, I needed to carry out two preprocessing steps before executing the clustering.
+
+First, I converted all categorical columns into numerical format using the `pd.get_dummies` function. This process generated new columns with binary values (0s and 1s) for each category, which is crucial for the K-Means algorithm to function correctly.
+
+Second, I standardized all numerical features using StandardScaler to ensure that no single feature would dominate the clustering process due to its larger magnitude.
+
+After preprocessing the data, I applied the "Elbow Method" to determine the optimal number of clusters (k) within a range from 1 to 9. The resulting plot revealed an "elbow" at k=4, indicating that four clusters is the most suitable choice.
+
+Next, I executed K-Means using four clusters (n_clusters=4), and added the cluster assignments as a new column to the original DataFrame.
+
+Finally, I created a scatter plot to visualize the clusters, showcasing the culmen (beak) length in millimeters for each assigned cluster.
+
+Dr. Kristen Gorman and her research team at Palmer Station in Antarctica will find the results of this project very helpful.
 ## Predicting Movie Rental Durations 
 
 
