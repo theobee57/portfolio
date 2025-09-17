@@ -204,6 +204,7 @@ I extracted the p-value from the Pingouin test results and compared it to a pred
 The p-value was less than the confidence level, indicating that the null hypothesis should be rejected.
 
 ##  Clustering Antarctic Penguin Species
+![Antartic Penguins](/images/penguins.png) 
 The objective of this project was to analyze a dataset of Antarctic penguins to categorize them based on their physical features.
 
 To accomplish this, I utilized Python and several key packages: Pandas for data cleaning, validation, and manipulation; StandardScaler from the sklearn.preprocessing library; KMeans from the sklearn.cluster library, and Matplotlib for visualization.
