@@ -223,6 +223,31 @@ Next, I executed K-Means using four clusters (n_clusters=4), and added the clust
 Finally, I created a scatter plot to visualize the clusters, showcasing the culmen (beak) length in millimeters for each assigned cluster.
 
 Dr. Kristen Gorman and her research team at Palmer Station in Antarctica will find the results of this project very helpful.
-## Predicting Movie Rental Durations 
 
+## Predicting Movie Rental Durations 
+The goal of this project was to predict the number of days a customer will rent a DVD based on a specific set of features. The project was initiated by a company looking to fill the void left by Netflix’s discontinuation of its DVD-by-mail service in September 2013.
+
+To achieve this, I utilized Python and several essential packages: Pandas, NumPy, "train_test_split" from "sklearn.model_selection", and "mean_squared_error" from "sklearn.metrics".
+
+My overall plan was to compare the performance of two different regression models: a Lasso-based linear regression and a Random Forest Regressor. I aimed to select the model with the lowest Mean Squared Error (MSE) as the best.
+
+To prepare for this task, I derived a new column, "rental_length_days", by subtracting the "rental_date" from the "return_date". Additionally, I created two new binary columns, "deleted_scenes" and "behind_the_scenes", to indicate the presence of these special features.
+
+Next, I defined the target variable y as rental_length_days and established the feature set X  by dropping all irrelevant columns. To finish the prep, I split the data into training and testing sets.
+
+For the Lasso regression model, I wrote a Python program that:
+- Trains a Lasso model on the training data.
+- Selects only the features with a positive coefficient, effectively removing those that the model determined to be unhelpful.
+- Trains an Ordinary Least Squares (OLS) linear regression model using only these selected features.
+- Evaluates the OLS model's performance by calculating the MSE on the test set and stores the results.
+
+In the second part of the task, my program built and tuned a Random Forest model by following these steps:
+- I used "RandomizedSearchCV" to find the optimal hyperparameters for "n_estimators" (the number of trees) and "max_depth" of the forest.
+- I fitted the random search to the training data to identify the best combination of these parameters.
+- I created a new `RandomForestRegressor` using the optimal hyperparameters obtained from the search.
+- Finally, I trained the model on the entire training dataset and used its predictions to calculate the "Mean Squared Error" (MSE) on the test set.
+
+The Random Forest model had a lower MSE,  so I selected it as the best model.
+
+The project provided valuable insights to help the company become more efficient in inventory planning.
 
