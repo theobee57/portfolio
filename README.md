@@ -12,7 +12,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 - Data Analyst Associate (SQL), DataCamp
 - Associate Data Scientist, DataCamp (to be completed soon)
 
-## Courses completed:
+## Data Science Courses completed:
 ### Python
 - Introduction to Python
 - Intermediate Python
@@ -46,7 +46,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 - Data-Driven Decision Making in SQL
 - Applying SQL to Real-World Problems
 
-# My Latest Projects
+## My Latest Projects
 
 ## Analyzing Unicorn Companies
 The goal of this project was to identify the top three industries with the highest number of unicorn companies between 2019 and 2021, and to calculate the average valuation for those industries during the same period. (Note: A unicorn company is a private startup with a valuation exceeding $1 billion.)
