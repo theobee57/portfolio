@@ -1,4 +1,4 @@
-> Identifying unfulfilled needs, emerging opportunities, and areas for improvement.
+# My Data Science Portfolio
 
 I am an experienced Information Technologist with a passion for data science. I love data science because it is a key driver of the AI revolution, transforming our world, identifying needs, opportunities, and areas for improvement. I am a Data Analyst, working my way up to becoming a Data Scientist.
 
@@ -10,6 +10,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 ## Data Science credentials:
 - Data Analyst (Python), DataCamp
 - Data Analyst Associate (SQL), DataCamp
+- Associate Data Scientist, DataCamp (to be completed soon)
 
 ## Courses completed:
 ### Python
@@ -124,18 +125,16 @@ By the end of the project, the dataset contained only the desired subset of data
 The data was thus ready for both analytical and machine learning tasks.
 ## Investigating Netflix Movies
 ![Netflix Movies of the 1990s](/images/Netflix.png) 
-### Objective
 The objective of this project was to conduct exploratory data analysis on Netflix data to uncover insights into movies from the 1990s, a pivotal decade in the modern film industry, and provide answers to specific business questions.
-i
-### Tools
+
 I  used Pandas for manipulating the dataset, Matplotlib for visualization, and Python for programming.
-### Procedure
+
 Having loaded pre-cleaned Netflix data into a pandas DataFrame, I subsetted the DataFrame to include only movies released between 1990 and 1999.
 
 I then created a histogram based on the 'Duration' column. This visualization enabled me to determine the distribution of movie lengths in that decade, especially the most common movie duration and other insights.
 
 I applied a second filter to isolate the 'Action' genre. Then I iterated through this filtered dataset using a for loop with a counter variable to count each movie that met various duration criteria.
-### Impact
+
 The results had a direct impact on Netflix's content strategy, enhancing user experience and refining its market position.
 
 ## New York City Public School Results
