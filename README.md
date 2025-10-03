@@ -48,28 +48,6 @@ I am an experienced Information Technologist with a passion for data science. I 
 
 ## My Latest Projects
 
-## Analyzing Unicorn Companies
-The goal of this project was to identify the top three industries with the highest number of unicorn companies between 2019 and 2021, and to calculate the average valuation for those industries during the same period. (Note: A unicorn company is a private startup with a valuation exceeding $1 billion.)
-
-I completed the project using SQL, sourcing data from four tables that contained information on dates, funding, industries, and companies.
-
-First, I developed a Common Table Expression (CTE) to identify the three industries that had the most new unicorn companies from 2019 to 2021 by doing the following:
-- I joined the industries table with the dates table using the company_id.
-- I filtered the records to include only those where the year of the date_joined is 2019, 2020, or 2021.
-- I then grouped the results by industry and counted the number of companies in each industry.
-Finally, I ordered the results in descending order by count and selected only the top three industries using the LIMIT 3 clause.
-
-Next, I developed another CTE to calculate the number of unicorns and their average valuation for all industries between 2019 and 2021 by doing the following:
-- I joined the industries, dates, and funding tables together on company_id.
-- I grouped the data by industry and the year a company joined.
-- I counted the number of companies and calculated the average valuation for each industry per year.
-
-Finally, I wrote a SELECT statement to select from the two CTEs to produce the desired result.
-
-I grouped the data to aggregate the results correctly and ordered the output by year in descending order, and then by the number of unicorns in descending order.
-
-This project provided valuable information to an investment firm, offering insights into industry trends and helping them strategically structure their portfolio for the future.
-
 ## New Product Sales Strategy
 ![Sales Strategies](/images/Sales_strategies.png)       
 The project had two main objectives:
@@ -317,4 +295,27 @@ In the second part of the task, my program built and tuned a Random Forest model
 The Random Forest model had a lower MSE,  so I selected it as the best model.
 
 The project provided valuable insights to help the company become more efficient in inventory planning.
+
+## Analyzing Unicorn Companies
+The goal of this project was to identify the top three industries with the highest number of unicorn companies between 2019 and 2021, and to calculate the average valuation for those industries during the same period. (Note: A unicorn company is a private startup with a valuation exceeding $1 billion.)
+
+I completed the project using SQL, sourcing data from four tables that contained information on dates, funding, industries, and companies.
+
+First, I developed a Common Table Expression (CTE) to identify the three industries that had the most new unicorn companies from 2019 to 2021 by doing the following:
+- I joined the industries table with the dates table using the company_id.
+- I filtered the records to include only those where the year of the date_joined is 2019, 2020, or 2021.
+- I then grouped the results by industry and counted the number of companies in each industry.
+Finally, I ordered the results in descending order by count and selected only the top three industries using the LIMIT 3 clause.
+
+Next, I developed another CTE to calculate the number of unicorns and their average valuation for all industries between 2019 and 2021 by doing the following:
+- I joined the industries, dates, and funding tables together on company_id.
+- I grouped the data by industry and the year a company joined.
+- I counted the number of companies and calculated the average valuation for each industry per year.
+
+Finally, I wrote a SELECT statement to select from the two CTEs to produce the desired result.
+
+I grouped the data to aggregate the results correctly and ordered the output by year in descending order, and then by the number of unicorns in descending order.
+
+This project provided valuable information to an investment firm, offering insights into industry trends and helping them strategically structure their portfolio for the future.
+
 
