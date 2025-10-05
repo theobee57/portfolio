@@ -50,6 +50,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 
 ## New Product Sales Strategy
 ![Sales Strategies](/images/sales_strategies.png)       
+
 The project had two main objectives:
 - Determine the optimal sales strategy for a new product launch
 - Establish a metric to evaluate sales revenue
