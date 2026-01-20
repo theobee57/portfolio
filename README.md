@@ -120,8 +120,9 @@ Key design principles:
 
 ### 6. Dashboard Design
 
-Executive KPIs
-
+## Key Business KPIs with Risk Exposure
+In addition to core revenue and churn metrics, this dashboard quantifies how much revenue is exposed to churn risk above a configurable tolerance level.
+![KPIs](/images/KPIs2.png)
 A dedicated KPI row provides immediate business context:
 
 * Active Monthly Revenue
