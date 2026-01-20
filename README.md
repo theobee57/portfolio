@@ -49,7 +49,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 ## My Latest Projects
 ===========================================
 ## Revenue Health & Churn Risk Simulator (Executive Decision Support)
-
+![Revenue Health/Risk](/images/dashboard1.png)   
 ### Tools
 
 Tableau Desktop · Parameters & Actions · Calculated Fields
