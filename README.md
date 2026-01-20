@@ -122,7 +122,9 @@ Key design principles:
 
 ## Key Business KPIs with Risk Exposure
 In addition to core revenue and churn metrics, this dashboard quantifies how much revenue is exposed to churn risk above a configurable tolerance level.
+
 ![KPIs](/images/KPI2.png)
+
 A dedicated KPI row provides immediate business context:
 
 * Active Monthly Revenue
@@ -151,9 +153,36 @@ Provides diagnostic insight into the relationship between customer tenure and re
 ### 7. Key Insights
 
 * Revenue is heavily concentrated in longer-term contracts, creating both strength and dependency.
+
+## Revenue Is Concentrated in Long-Term Contracts
+
+![Revenue Contribution](/images/revenue_trend3.png)
+
+A small number of contract types generate the majority of revenue, creating both stability and concentration risk.
+
 * Month-to-month contracts consistently exhibit churn rates above typical risk tolerance levels.
+## Revenue Is Concentrated in Long-Term Contracts
+A small number of contract types generate the majority of revenue, creating both stability and concentration risk.
+
+![Contracts](/images/contracts4.png)
+
+  
 * As churn risk thresholds tighten, a disproportionate share of revenue becomes classified as “at risk.”
+
+## Parameter-Driven Churn Risk Classification
+
+Executives can adjust churn risk tolerance and instantly identify which contract types exceed acceptable risk levels.
+
+![Contracts](/images/risks5.png)
+
 * Revenue exposure is more sensitive to churn tolerance decisions than to changes in total customer count.
+
+## Tenure Is Associated with Higher Monthly Charges
+
+Longer-tenured customers tend to generate higher monthly revenue, reinforcing the importance of retention-focused strategies.
+
+![Tenures](/images/tenures6.png)
+
 
 ### 8. Recommendations
 
