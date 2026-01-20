@@ -47,6 +47,157 @@ I am an experienced Information Technologist with a passion for data science. I 
 - Applying SQL to Real-World Problems
 
 ## My Latest Projects
+===========================================
+## Revenue Health & Churn Risk Simulator (Executive Decision Support)
+
+### Tools
+
+Tableau Desktop · Parameters & Actions · Calculated Fields
+
+Dataset: IBM Telco Client 
+
+### 1. Business Background
+
+The business uses a subscription model with multiple contract types and customer segments. While revenue appears steady, leadership faces an ongoing challenge:
+
+How much revenue is exposed to churn risk, and how sensitive is that risk to leadership’s tolerance level?
+
+Traditional dashboards report churn and revenue separately. This project closes that gap, enabling executives to simulate risk tolerance decisions and immediately see their impact on revenue exposure.
+
+### 2. Business Objectives
+
+This project supports executive decision-making by answering the following questions:
+
+* How concentrated is revenue across contract types?
+* Which segments exceed acceptable churn risk?
+* How does revenue exposure change as churn tolerance tightens or loosens?
+* Where should retention efforts be given priority to protect revenue?
+
+### 3. Data Overview
+
+The dataset contains customer-level subscription data, including:
+
+* Monthly charges (revenue proxy)
+* Customer tenure (lifecycle indicator)
+* Contract type
+* Internet service type
+* Customer churn status (Yes/No)
+
+Because the dataset lacks calendar-based snapshots, all metrics were defined to ensure accuracy, transparency, and defensibility.
+
+### 4. Key Metrics Defined
+
+Active Monthly Revenue
+
+Sum of monthly charges for non-churned customers.
+
+Used as a proxy for Monthly Recurring Revenue (MRR).
+
+Active Customers
+
+Distinct count of customers who have not churned.
+
+Customer Churn Rate
+
+Proportion of customers who have discontinued within each segment.
+
+Note: Monthly churn was intentionally avoided due to data limitations.
+
+Revenue at High Churn Risk (Executive KPI)
+
+Revenue associated with segments whose churn rate exceeds a user-defined risk threshold.
+
+### 5. Analytical Approach
+
+This project goes beyond descriptive analytics by introducing parameter-driven what-if analysis.
+
+Key design principles:
+
+* Metrics remain stable and validated.
+* Parameters control analytical logic, not data filtering.
+* Executives define what “high risk” means.
+* The dashboard responds instantly without recalculating base metrics.
+
+### 6. Dashboard Design
+
+Executive KPIs
+
+A dedicated KPI row provides immediate business context:
+
+* Active Monthly Revenue
+* Active Customers
+* Overall Customer Churn Rate
+* Revenue at High Churn Risk (dynamic)
+
+Together, these KPIs answer:
+
+“How large is the business, and how much of it is at risk?”
+
+Core Analytical Views
+
+Revenue Contribution by Contract
+
+Highlights revenue concentration across contract types, showing which segments are most critical to business stability.
+
+Customer Churn Risk by Contract
+
+Uses parameter-driven coloring to classify contract types as acceptable risk or high risk, based on executive-defined thresholds.
+
+Monthly Charges vs Customer Tenure
+
+Provides diagnostic insight into the relationship between customer tenure and revenue contribution.
+
+### 7. Key Insights
+
+* Revenue is heavily concentrated in longer-term contracts, creating both strength and dependency.
+* Month-to-month contracts consistently exhibit churn rates above typical risk tolerance levels.
+* As churn risk thresholds tighten, a disproportionate share of revenue becomes classified as “at risk.”
+* Revenue exposure is more sensitive to churn tolerance decisions than to changes in total customer count.
+
+### 8. Recommendations
+
+Based on the analysis:
+
+1. Protect high-value segments
+2. Prioritize retention strategies for long-term contract customers who contribute the majority of revenue.
+3. Reduce exposure in high-risk segments.
+4. Introduce targeted incentives or contract migration strategies for month-to-month customers.
+5. Use risk tolerance explicitly.
+6. Leadership should align churn risk thresholds with the business strategy, while being aware of the trade-off between growth flexibility and revenue consistency.
+
+### 9. Why This Project Matters
+
+This project shows my ability to:
+
+* Design executive-focused KPIs
+* Use parameters for scenario simulation, not gimmicks.
+* Translate analytical metrics into risk-based decision support.
+* Balance technical correctness with business usability.
+
+Instead of reporting churn and revenue independently, this dashboard connects them to inform leadership action.
+
+### 10. What I’d Explore Next
+
+With additional data, I would extend this analysis by:
+
+* Modeling churn risk by tenure cohorts
+* Quantifying the cost of churn-mitigation strategies
+* Simulating revenue impact of contract-mix changes
+* Integrating time-based churn snapshots for trend analysis
+
+### Final Note
+
+This project demonstrates how I approach executive analytics problems:
+
+clear metric definitions, validated logic, and interactive tools that support real decisions instead of static reporting.
+
+​
+
+
+
+
+
+========================================
 
 ## New Product Sales Strategy
 ![Sales Strategies](/images/sales_strategies.png)       
