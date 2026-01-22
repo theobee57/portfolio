@@ -58,9 +58,9 @@ Tableau Desktop · Parameters & Actions · Calculated Fields
 
 ## 1. Business Background
 
-The business, a telecommunications company, uses a subscription model with multiple contract types and customer segments. While revenue appears steady, leadership faces an ongoing challenge:
+A telecommunications company uses a subscription model with multiple contract types and customer segments. While revenue appears steady, leadership faces an ongoing challenge:
 
-How much revenue is exposed to churn risk, and how sensitive is that risk to leadership’s tolerance level?
+** How much revenue is exposed to churn risk, and how sensitive is that risk to leadership’s tolerance level?
 
 This project enables executives to simulate risk tolerance decisions and immediately see their impact on revenue exposure.
 
@@ -150,14 +150,13 @@ Provides diagnostic insight into the relationship between customer tenure and re
 
 ## Key Insights
 
-### 1. Revenue Is Concentrated in Long-Term Contracts, creating both strength and dependency.
+### 1. Medium tenure and long-tenure contracts generate the most revenue.
 
 ![Revenue Contribution](/images/revenue_trend3.png)
 
-A small number of contract types generate the majority of revenue, creating both stability and concentration risk.
 
-* Month-to-month contracts consistently exhibit churn rates above typical risk tolerance levels.
-### 2. Revenue Is Concentrated in Long-Term Contracts
+### 2. Revenue Is Concentrated in Long-Term Contracts, creating both strength and dependency.
+
 
 ![Contracts](/images/contracts4.png)
 
