@@ -47,7 +47,12 @@ I am an experienced Information Technologist with a passion for data science. I 
 - Applying SQL to Real-World Problems
 
 ## My Latest Projects
+## Executive Project Portfolio Performance & Risk (PPM Analytics)
 
+
+
+
+========
 ## Revenue Health & Churn Risk (Executive Decision Support)
 
 ![Revenue Health/Risk](/images/dashboard1.png)   
