@@ -50,30 +50,29 @@ I am an experienced Information Technologist with a passion for data science. I 
 ## Executive Project Portfolio Performance & Risk (PPM Analytics)
 This project demonstrates executive portfolio analytics for an integrated Project Portfolio Management (PPM) environment. The dashboard combines financial performance, delivery risk, and resource capacity to support prioritization and leadership decision-making.
 
-![Revenue Health/Risk](/images/ppm1_dashboard.png)
-Executive Project Portfolio Performance & Risk Overview
+### Executive Project Portfolio Performance & Risk Overview
 An integrated dashboard combining financial performance, delivery health, and resource capacity to support executive portfolio decisions.
+![Revenue Health/Risk](/images/ppm1_dashboard.png)
 
-![Revenue Health/Risk](/images/ppm2_kpis.png)
-Portfolio Financial Baseline
+### Portfolio Financial Baseline
 Executive KPIs establish approved budget, actual spend, remaining headroom, and budget consumption across the portfolio.
+![Revenue Health/Risk](/images/ppm2_kpis.png)
 
-![Revenue Health/Risk](/images/ppm3_budget.png)
-Portfolio Spend Is Concentrated Across a Small Number of Portfolios
+### Portfolio Spend Is Concentrated Across a Small Number of Portfolios
 A limited set of portfolios account for the majority of approved spend, increasing exposure if delivery performance declines.
+![Revenue Health/Risk](/images/ppm3_budget.png)
 
-![Revenue Health/Risk](/images/ppm4_delivery_risk.png)
-Delivery Risk Is Unevenly Distributed Across the Portfolio
+### Delivery Risk Is Unevenly Distributed Across the Portfolio
 Certain portfolios exhibit a disproportionate number of projects behind schedule, independent of total budget size.
+![Revenue Health/Risk](/images/ppm4_delivery_risk.png)
 
-![Revenue Health/Risk](/imagesppm5_resource_capacity.png)
-Systemic Resource Pressure Drives Delivery Risk
+### Systemic Resource Pressure Drives Delivery Risk
 Multiple roles exceed utilization thresholds during peak execution periods, indicating structural capacity constraints rather than isolated issues.
+![Revenue Health/Risk](/images/ppm5_resource_capacity.png)
 
-![Revenue Health/Risk](/images/ppm6_matrix.png)
-High-Value Projects Behind Schedule Require Immediate Attention
+### High-Value Projects Behind Schedule Require Immediate Attention
 Mapping project value against schedule variance highlights where executive intervention can deliver the greatest impact.
-
+![Revenue Health/Risk](/images/ppm6_matrix.png)
 
 
 
