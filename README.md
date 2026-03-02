@@ -75,7 +75,8 @@ Financial exposure and billing risk analysis
 The solution bridges project subledger execution with financial close oversight.
 
 ## Dashboard 1 — PPM Close Governance
-![PPM Close Governance Dashboard](images/ppmClose_dashboard1_full)
+![PPM Close Governance Dashboard](images/ppmClose_dashboard1_full.png.png)
+
 *Figure 1: Period-specific PPM close governance view with subledger dependency modeling.*
 
 ### Purpose:
@@ -90,6 +91,12 @@ Governance Value
 Makes close gating logic explicit.
 Surfaces upstream dependencies.
 Provides a clean executive control view.
+
+## Dependency Modeling Section
+![Dependency Flow](images/ppmClose_dependency_flow.png)
+
+
+
 
 ============
 ## Executive Project Portfolio Performance & Risk (PPM Analytics)
