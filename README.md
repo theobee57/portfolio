@@ -47,6 +47,51 @@ I am an experienced Information Technologist with a passion for data science. I 
 - Applying SQL to Real-World Problems
 
 ## My Latest Projects
+
+# PPM–Financial Close Governance Integration Framework
+**Oracle Cloud PPM | Tableau | Financial Risk Analytics**
+
+## Business Problem
+In Oracle Cloud environments, PPM period close is often treated as a technical checklist:
+Close Payables
+Run Costing
+Validate Revenue
+Review Billing
+Close Project Period
+
+However, organizations struggle with two recurring issues:
+Close readiness is assessed operationally, not financially.
+Billing exposure and aging risks are not surfaced before GL close.
+
+As a result:
+Period close may be technically complete.
+But significant billing risk remains hidden.
+Controllers lack visibility into subledger-to-GL dependencies.
+
+## Solution Overview
+I designed a two-layer governance framework in Tableau that integrates:
+PPM operational close readiness
+Financial exposure and billing risk analysis
+The solution bridges project subledger execution with financial close oversight.
+
+## Dashboard 1 — PPM Close Governance
+![PPM Close Governance Dashboard](images/ppmClose_dashboard1_full)
+*Figure 1: Period-specific PPM close governance view with subledger dependency modeling.*
+
+### Purpose:
+Determine whether the period is ready to close.
+Key Components
+Dynamic context header (Period + BU)
+Overall Close Decision (READY / NOT READY)
+Subledger Dependency Flow:
+AP → Costing → Revenue → Billing → Project Close
+Root Cause Breakdown (Open Issues by Subledger)
+Governance Value
+Makes close gating logic explicit.
+Surfaces upstream dependencies.
+Provides a clean executive control view.
+
+============
 ## Executive Project Portfolio Performance & Risk (PPM Analytics)
 This project demonstrates executive portfolio analytics for an integrated Project Portfolio Management (PPM) environment. The dashboard combines financial performance, delivery risk, and resource capacity to support prioritization and leadership decision-making.
 
