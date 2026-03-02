@@ -93,7 +93,7 @@ Surfaces upstream dependencies.
 Provides a clean executive control view.
 
 ## Dependency Modeling Section
-![Dependency Flow](images/ppmClose_dependency_flow.png)
+![Dependency Flow](images/ppmClose_dependency_flow.png.png)
 
 
 
