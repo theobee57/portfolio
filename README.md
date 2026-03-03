@@ -135,7 +135,7 @@ A worrisome high percentage of invoice value blocked.
 
 ### Heavy 90+ day aging
 
-![Large Aging Bucket](images/ppmClose_ heatmap.png.png)
+![Large Aging Bucket](images/ppmClose_heatmap.png.png)
 
 *Figure 7: Blocked invoice concentration by status and aging bucket*
 
