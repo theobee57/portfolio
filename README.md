@@ -50,6 +50,9 @@ I am an experienced Information Technologist with a passion for data science. I 
 
 # PPM–Financial Close Governance Integration Framework
 **Oracle Cloud PPM | Tableau | Financial Risk Analytics**
+## Executive Summary
+
+This project integrates operational PPM period close readiness with billing exposure analytics to provide a unified governance framework. It bridges subledger dependency control with financial risk visibility using Tableau.
 
 ## Business Problem
 In Oracle Cloud environments, PPM period close is often treated as a technical checklist:
@@ -94,6 +97,53 @@ Provides a clean executive control view.
 
 ## Dependency Modeling Section
 ![Dependency Flow](images/ppmClose_dependency_flow.png.png)
+
+## Dashboard 2 — Billing Risk & Exposure
+![Billing Risk](images/ppmClose_dashboard2_full.png.png)
+*Figure 3: Technical close readiness contrasted with elevated billing exposure risk*
+
+Purpose:
+Diagnose financial exposure embedded in the close.
+Key Components
+KPI Strip:
+Total Invoice Amount
+Blocked Amount
+% Blocked
+Blocked Invoice Count
+Status × Aging Risk Matrix
+Top Projects by Blocked Amount
+Exposure Concentration Analysis
+
+## Risk Scenario Example (Germany 2025-09)
+![Risk Scenario](images/ppmClose_dashboard1_header.png.png)
+![Risk Scenario](images/ppmClose_dashboard2_full.png.png)
+*Figure 4: PPM is ready to close despite high financial risk (72% if invoice amounts blocked)*
+
+## Key Design Decisions
+
+### Parameter-driven architecture
+
+![Parameters](images/ppmClose_parameters.png.png)
+
+*Figure 5: Parameter-driven cross-dashboard synchronization*
+
+## Insights
+A worrisome high percentage of invoice value blocked.
+
+![Billing KPIs](images/ppmClose_billing_kpis.png.png)
+*Figure 6: Billing exposure summary highlighting blocked revenue concentration (KPIs)*
+
+### Heavy 90+ day aging
+
+![Large Aging Bucket](images/ppmClose_heatmap.png.png)
+
+*Figure 7: Blocked invoice concentration by status and aging bucket*
+
+## Top 5 projects in trouble (based on blocked invoice amount)
+
+![Top Projects](images/ppmClose_top_projects.png.png)
+
+*Figure 8: Project-level exposure prioritization for operational intervention*
 
 
 
