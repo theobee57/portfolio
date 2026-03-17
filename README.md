@@ -1,51 +1,124 @@
-# My Data Science Portfolio
+# Theo Acquah — Data Analytics Portfolio
 
-I am an experienced Information Technologist with a passion for data science. I love data science because it is a key driver of the AI revolution, transforming our world, identifying needs, opportunities, and areas for improvement. I am a Data Analyst, working my way up to becoming a Data Scientist.
+![Portfolio Banner](images/portfolio_banner.png)
 
-## Education
-- BSc (Honours) Information Systems in Computer Science and Information Systems, University of South Africa
-- Certificate in Oracle E-Commerce Development, University of Toronto
-- Certificate in Project Leadership (Postgraduate) in Project Management, University of Waterloo 
+Data Analyst specializing in **enterprise analytics, financial performance, portfolio intelligence, and business-focused data storytelling**.
 
-## Data Science credentials:
-- Data Analyst (Python), DataCamp
-- Data Analyst Associate (SQL), DataCamp
-- Associate Data Scientist, DataCamp (to be completed soon)
+This portfolio showcases projects built with **Python, SQL, Tableau, and Oracle Cloud PPM/ERP-style data**. The work focuses on solving real business problems through KPI design, dashboarding, exploratory analysis, and actionable recommendations.
 
-## Data Science Courses completed:
-### Python
-- Introduction to Python
-- Intermediate Python
-- Data Manipulation with Pandas
-- Joining Data With Pandas
-- Introduction to Statistics in Python
-- Introduction to Data Visualization With Matplotlib
-- Introduction to Data Visualization With Seaborn
-- Introduction to Functions in Python
-- Python Toolbox 
-- Exploratory Data Analysis in Python
-- Working With Categorical Data in Python
-- Data Communication Concepts
-- Introduction to Importing Data in Python
-- Cleaning Data in Python
-- Working With Dates and Times in Python
-- Writing Functions in Python
-- Introduction to Regression With Statsmodels in Python
-- Sampling in Python
-- Hypothesis Testing in Python
-- Experimental Design in Python
-- Supervised Learning with Scikit-Learn
-- Unsupervised Learning in Python
-- Machine Learning With Tree-based Models in Python
+---
 
-### SQL
-- Joining Data in SQL
-- Data Manipulation in SQL
-- Exploratory Data Analysis in SQL
-- PostgreSQL Summary Stats and Window Function
-- Data-Driven Decision Making in SQL
-- Applying SQL to Real-World Problems
+## About Me
 
+I bring a blend of **enterprise systems knowledge** and **analytics capability**, with experience translating complex business data into decision-ready insights.
+
+My portfolio focuses on:
+- Financial and profitability analytics
+- Portfolio performance and delivery risk
+- Resource capacity and utilization
+- ERP and operational control analytics
+- Customer and business performance analysis
+
+---
+
+## Tools & Technologies
+
+- **Python**: pandas, numpy, matplotlib
+- **SQL**
+- **Tableau**
+- **Oracle Cloud PPM / ERP Analytics**
+- **Data Modeling**
+- **KPI Development**
+- **Dashboard Design**
+- **Data Visualization**
+- **Business Intelligence**
+- **Executive Reporting**
+
+---
+
+## What This Portfolio Demonstrates
+
+- End-to-end data analysis using Python and SQL
+- Business-focused KPI design and reporting
+- Financial, operational, and portfolio analytics
+- Executive dashboard development
+- Ability to turn raw data into clear business recommendations
+- Strong alignment between analytics outputs and decision-making needs
+
+---
+
+## Featured Projects
+
+### 1) Sales Performance & Profitability Analysis (Python)
+
+![Sales Performance Analysis](sales-performance-analysis/visuals/sales_by_region.png)
+
+Business-focused Python analysis exploring revenue drivers, profitability, discount impact, and product performance across regions and customer segments.
+
+**Key Skills:** Python, pandas, KPI analysis, profitability analysis, data visualization, business recommendations  
+[View Project](sales-performance-analysis/)
+
+---
+
+### 2) Customer Churn Risk Analysis (Python)
+
+![Customer Churn Analysis](customer-churn-analysis/visuals/churn_by_contract.png)
+
+Python project analyzing customer churn behavior to identify risk drivers, customer segments with elevated churn probability, and actions to improve retention.
+
+**Key Skills:** Python, exploratory data analysis, feature analysis, churn analytics, business insights  
+[View Project](customer-churn-analysis/)
+
+---
+
+### 3) Executive Project Portfolio Performance & Risk Analytics (Tableau)
+
+![Portfolio Risk Dashboard](ppm-portfolio-risk-analytics/visuals/dashboard.png)
+
+Executive dashboard analyzing project portfolio financial condition, delivery risk, resource capacity pressure, and prioritization opportunities across enterprise initiatives.
+
+**Key Skills:** Tableau, portfolio analytics, KPI design, scenario analysis, executive reporting  
+[View Project](ppm-portfolio-risk-analytics/)
+
+---
+
+### 4) ERP Period Close Bottleneck Analysis (Tableau)
+
+![ERP Period Close Analysis](erp-period-close-analytics/visuals/dashboard.png)
+
+Operational analytics project identifying blocked revenue, invoice aging, close-cycle bottlenecks, and exception patterns affecting financial readiness.
+
+**Key Skills:** Tableau, ERP analytics, financial operations, bottleneck analysis, business storytelling  
+[View Project](erp-period-close-analytics/)
+
+---
+
+### 5) Intercompany Billing Control Tower (Tableau)
+
+![Intercompany Billing Control Tower](intercompany-billing-control-tower/visuals/dashboard.png)
+
+Control-tower style analytics solution providing visibility from project cost capture through billing, SLA, and GL posting to support operational control and financial governance.
+
+**Key Skills:** Tableau, ERP lifecycle analytics, intercompany billing, audit visibility, KPI design  
+[View Project](intercompany-billing-control-tower/)
+
+---
+
+## Portfolio Structure
+
+```text
+data-analytics-portfolio
+│
+├── README.md
+├── images
+│   └── portfolio_banner.png
+│
+├── sales-performance-analysis
+├── customer-churn-analysis
+├── ppm-portfolio-risk-analytics
+├── erp-period-close-analytics
+└── intercompany-billing-control-tower
+=========
 ## My Latest Projects
 # Intercompany Billing Control Tower
 ### Oracle Cloud PPM + Tableau Analytics
