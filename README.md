@@ -51,6 +51,7 @@ I am an experienced Information Technologist with a passion for data science. I 
 ### Oracle Cloud PPM + Tableau Analytics
 A finance analytics solution that provides end-to-end visibility into the intercompany billing lifecycle, from project cost capture through billing and GL posting.
 This project demonstrates how Tableau dashboards can transform intercompany billing from a reactive accounting task into a proactive operational control process.
+
 [Open Project](interco/)
 
 [Open Project](PPMclose/)
