@@ -49,6 +49,9 @@ I am an experienced Information Technologist with a passion for data science. I 
 ## My Latest Projects
 
 [Open Project](interco/)
+
 [Open Project](PPMclose/)
+
 [Open Project](ppmanalytics/)
+
 [Open Project](healthNchurn/)
