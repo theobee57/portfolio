@@ -1,1 +1,166 @@
+# Revenue Health & Churn Risk (Executive Decision Support)
 
+![Revenue Health/Risk](/images/dashboard1.png)   
+
+## Tools
+
+* Tableau
+* Parameters & Actions
+* Calculated Fields
+
+## 1. Business Background
+
+A telecommunications company uses a subscription model with multiple contract types and customer segments. While revenue appears steady, leadership faces an ongoing challenge:
+
+** How much revenue is exposed to churn risk, and how sensitive is that risk to leadership’s tolerance level?
+
+This project enables executives to simulate risk tolerance decisions and immediately see their impact on revenue exposure.
+
+## 2. Business Objectives
+
+This project supports executive decision-making by answering the following questions:
+
+* How concentrated is revenue across contract types?
+* Which segments exceed acceptable churn risk?
+* How does revenue exposure change as churn tolerance tightens or loosens?
+* Where should retention efforts be given priority to protect revenue?
+
+## 3. Data Overview
+
+The dataset contains customer-level subscription data, including:
+
+* Monthly charges (revenue proxy)
+* Customer tenure (lifecycle indicator)
+* Contract type
+* Internet service type
+* Customer churn status (Yes/No)
+
+The dataset lacks calendar-based snapshots. All metrics were defined bearing this in mind, to ensure accuracy, transparency, and defensibility.
+
+## 4. Key Metrics Defined
+
+Active Monthly Revenue
+
+Sum of monthly charges for non-churned customers - used as a proxy for Monthly Recurring Revenue (MRR)
+
+Active Customers
+
+Distinct count of customers who have not churned.
+
+Customer Churn Rate
+
+Proportion of customers who have discontinued within each segment.
+
+Note: Monthly churn was intentionally avoided due to data limitations.
+
+Revenue at High Churn Risk (Executive KPI)
+
+Revenue associated with segments whose churn rate exceeds a user-defined risk threshold.
+
+## 5. Analytical Approach
+
+This project goes beyond descriptive analytics by introducing parameter-driven what-if analysis.
+
+Key design principles:
+
+* Metrics remain stable and validated.
+* Parameters control analytical logic, not data filtering.
+* Executives define what “high risk” means.
+* The dashboard responds instantly without recalculating base metrics.
+
+## 6. Dashboard Design
+
+## Key Business KPIs with Risk Exposure
+In addition to core revenue and churn metrics, this dashboard quantifies how much revenue is exposed to churn risk above a configurable tolerance level.
+
+![KPIs](/images/KPI2.png)
+
+A dedicated KPI row provides immediate business context:
+
+* Active Monthly Revenue
+* Active Customers
+* Overall Customer Churn Rate
+* Revenue at High Churn Risk (dynamic)
+
+Together, these KPIs answer:
+
+“How large is the business, and how much of it is at risk?”
+
+Core Analytical Views
+
+Revenue Contribution by Contract
+
+Highlights revenue concentration across contract types, showing which segments are most critical to business stability.
+
+Customer Churn Risk by Contract
+
+Uses parameter-driven coloring to classify contract types as acceptable risk or high risk, based on executive-defined thresholds.
+
+Monthly Charges vs Customer Tenure
+
+Provides diagnostic insight into the relationship between customer tenure and revenue contribution.
+
+## Key Insights
+
+### 1. Medium tenure and long-tenure contracts generate the most revenue.
+
+![Revenue Contribution](/images/revenue_trend3.png)
+
+
+### 2. Revenue Is Concentrated in Long-Term Contracts, creating both strength and dependency.
+
+
+![Contracts](/images/contracts4.png)
+
+A small number of contract types generate the majority of revenue, creating both stability and concentration risk.
+  
+### 3. As churn risk thresholds tighten, a disproportionate share of revenue becomes classified as “at risk.”
+
+![Contracts](/images/risks5.png)
+
+Executives can adjust churn risk tolerance and instantly identify which contract types exceed acceptable risk levels.
+
+### 4. Tenure Is Associated with Higher Monthly Charges
+
+![Tenures](/images/tenures6.png)
+
+Longer-tenured customers tend to generate higher monthly revenue, reinforcing the importance of retention-focused strategies.
+
+## 7. Recommendations
+
+Based on the analysis:
+
+1. Protect high-value segments
+2. Prioritize retention strategies for long-term contract customers who contribute the majority of revenue.
+3. Reduce exposure in high-risk segments.
+4. Introduce targeted incentives or contract migration strategies for month-to-month customers.
+5. Use risk tolerance explicitly.
+6. Leadership should align churn risk thresholds with the business strategy, while being aware of the trade-off between growth flexibility and revenue consistency.
+
+## 8. Why This Project Matters
+
+This project shows my ability to:
+
+* Design executive-focused KPIs
+* Use parameters for scenario simulation, not gimmicks.
+* Translate analytical metrics into risk-based decision support.
+* Balance technical correctness with business usability.
+
+Instead of reporting churn and revenue independently, this dashboard connects them to inform leadership action.
+
+## 9. What I would Explore Next
+
+With additional data, I would extend this analysis by:
+
+* Modeling churn risk by tenure cohorts
+* Quantifying the cost of churn-mitigation strategies
+* Simulating revenue impact of contract-mix changes
+* Integrating time-based churn snapshots for trend analysis
+
+## Final Note
+
+This project demonstrates how I approach executive analytics problems:
+
+* clear metric definitions
+* validated logic
+* interactive tools that support real decisions instead of static reporting
