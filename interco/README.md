@@ -20,7 +20,7 @@ The dashboards provide:
 
 ## Dashboard Preview
 
-![Executive Dashboard](interco/images/dashboard1_executive_overview.png)
+![Executive Dashboard](interco/dashboard1_executive_overview.png)
 
 ![Pipeline Dashboard](images/dashboard2_billing.png)
 
