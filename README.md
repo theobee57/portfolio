@@ -118,31 +118,6 @@ data-analytics-portfolio
 ├── ppm-portfolio-risk-analytics
 ├── erp-period-close-analytics
 └── intercompany-billing-control-tower
-=========
-## My Latest Projects
-# Intercompany Billing Control Tower
-### Oracle Cloud PPM + Tableau Analytics
-A finance analytics solution that provides end-to-end visibility into the intercompany billing lifecycle, from project cost capture through billing and GL posting.
-This project demonstrates how Tableau dashboards can transform intercompany billing from a reactive accounting task into a proactive operational control process.
-
-[Open Project](interco/)
 
 
-# PPM–Financial Close Governance Integration Framework
-**Oracle Cloud PPM | Tableau | Financial Risk Analytics**
-## Executive Summary
 
-This project integrates operational PPM period close readiness with billing exposure analytics to provide a unified governance framework. It bridges subledger dependency control with financial risk visibility using Tableau.
-
-[Open Project](PPMclose/)
-
-## Executive Project Portfolio Performance & Risk (PPM Analytics)
-This project demonstrates executive portfolio analytics for an integrated Project Portfolio Management (PPM) environment. The dashboard combines financial performance, delivery risk, and resource capacity to support prioritization and leadership decision-making.
-
-### Executive Project Portfolio Performance & Risk Overview
-An integrated dashboard combining financial performance, delivery health, and resource capacity to support executive portfolio decisions.
-
-[Open Project](ppmanalytics/)
-
-# Revenue Health & Churn Risk (Executive Decision Support)
-[Open Project](healthNchurn/)
