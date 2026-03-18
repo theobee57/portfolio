@@ -1,95 +1,166 @@
 # Sales Performance & Profitability Analysis
 
-## Project Overview
-This project analyzes sales, profit, discounting, and product performance across regions, customer segments, and categories. The goal is to identify what drives revenue, where margins are leaking, and which business areas require action.
+## Overview
+
+This project analyzes sales performance and profitability across regions, customer segments, and product categories to identify key revenue drivers and areas of margin leakage.
+
+The goal is to understand how different business factors — including discounting, product mix, and regional performance — impact overall profitability and to provide actionable recommendations for improving financial outcomes.
+
+---
 
 ## Business Problem
-A company can grow revenue while still underperforming on profit because of discounting, product mix, regional inefficiencies, or weak category performance. This analysis answers questions such as:
-- Which regions generate the most sales and profit?
-- Which categories and products are most profitable?
-- Where are discounts hurting margin?
-- Which products or sub-categories are loss-making?
-- How do sales and profit trend over time?
+
+Which products, regions, and customer segments are driving revenue and profit, and where are the biggest opportunities to improve profitability?
+
+Many businesses generate strong revenue but underperform on profit due to:
+- excessive discounting
+- low-margin product mix
+- regional inefficiencies
+
+This analysis aims to uncover these issues and support data-driven decision-making.
+
+---
 
 ## Dataset
-The dataset in this project is a realistic synthetic business dataset with more than 12,000 cleaned rows and the following fields:
-- `order_id`
-- `order_date`
-- `ship_date`
-- `ship_mode`
-- `customer_id`
-- `segment`
-- `region`
-- `category`
-- `sub_category`
-- `product_name`
-- `sales`
-- `quantity`
-- `discount`
-- `profit`
 
-A raw version is also included with a small number of duplicates and missing values for data-cleaning practice.
+The dataset is a realistic business dataset containing:
+
+- Order details (order date, ship date, order ID)
+- Customer information (customer ID, segment, region)
+- Product hierarchy (category, sub-category, product name)
+- Financial metrics (sales, quantity, discount, profit)
+
+The dataset simulates real-world sales and operational data used in business intelligence and financial analytics.
+
+---
 
 ## Tools Used
+
 - Python
 - pandas
 - numpy
 - matplotlib
-- Jupyter Notebook
+- DataLab (DataCamp)
+
+---
+
+## Analysis Approach
+
+The analysis was conducted in the following steps:
+
+1. Data cleaning and validation
+   - removed duplicates
+   - handled missing values
+   - converted date fields
+
+2. Creation of key performance indicators (KPIs)
+   - total sales
+   - total profit
+   - profit margin
+   - average order value
+
+3. Exploratory data analysis (EDA)
+   - sales and profit by region
+   - performance by category and sub-category
+   - time-based trends
+
+4. Profitability analysis
+   - discount impact on profit
+   - identification of loss-making products
+   - comparison of high- vs low-performing segments
+
+---
+
+## Key Insights
+
+### 1. Revenue Concentration Does Not Guarantee Profitability
+
+Some regions generate high sales volume but do not produce the highest profit margins, indicating inefficiencies or heavy discounting.
+
+---
+
+### 2. Technology Products Drive the Majority of Profit
+
+The Technology category contributes the largest share of overall profit, while other categories show weaker margin performance.
+
+---
+
+### 3. Discounting Significantly Impacts Profitability
+
+Higher discount levels are associated with reduced profit margins and, in some cases, negative profitability.
+
+---
+
+### 4. Certain Products Generate Consistent Losses
+
+Some products and sub-categories produce strong sales but consistently generate low or negative profit, indicating potential pricing or cost issues.
+
+---
+
+### 5. Sales Exhibit Seasonal Trends
+
+Sales increase during specific periods (e.g., Q4), suggesting opportunities for targeted promotions and demand planning.
+
+---
+
+## Business Recommendations
+
+### 1. Optimize Discount Strategy
+- Reduce excessive discounting on high-demand products
+- Implement discount thresholds based on margin impact
+
+---
+
+### 2. Focus on High-Margin Categories
+- Increase marketing and sales focus on profitable product lines
+- Promote Technology products where margins are strongest
+
+---
+
+### 3. Address Loss-Making Products
+- Review pricing strategy for underperforming products
+- Consider discontinuing or repositioning low-margin items
+
+---
+
+### 4. Improve Regional Profitability
+- Analyze cost structures and discount practices by region
+- Align regional strategies with profitability goals
+
+---
+
+### 5. Leverage Seasonal Demand
+- Plan promotions around high-demand periods
+- Optimize inventory and supply chain for peak seasons
+
+---
+
+## Sample Visualizations
+
+### Sales by Region
+
+![Sales by Region](visuals/sales_by_region.png)
+
+---
+
+### Profit by Category
+
+![Profit by Category](visuals/profit_by_category.png)
+
+---
+
+### Monthly Sales Trend
+
+![Monthly Sales Trend](visuals/monthly_sales_trend.png)
+
+---
 
 ## Project Structure
+
 ```text
 sales-performance-analysis
 │
-├── data
-│   ├── raw_sales_data.csv
-│   └── cleaned_sales_data.csv
-│
-├── notebooks
-│   └── sales_analysis.ipynb
-│
-├── visuals
-│
 ├── README.md
-└── requirements.txt
-```
-
-## Analysis Workflow
-1. Load and inspect the raw dataset
-2. Clean missing values and duplicates
-3. Create core business KPIs:
-   - Total Sales
-   - Total Profit
-   - Profit Margin
-   - Average Order Value
-4. Analyze performance by:
-   - Region
-   - Segment
-   - Category
-   - Sub-category
-   - Product
-   - Month
-5. Evaluate discount impact on profitability
-6. Identify top- and bottom-performing products
-7. Summarize business insights and recommendations
-
-## Recommended Charts
-- Sales by Region
-- Profit by Category
-- Monthly Sales Trend
-- Average Profit by Discount Level
-- Top 10 Products by Profit
-- Bottom 10 Products by Profit
-
-## Example Business Insights
-- Revenue may be concentrated in one or two regions, but those regions may not have the highest margins.
-- Heavy discounting can significantly reduce profit.
-- Some product lines may generate strong sales but low or negative profit.
-- Seasonal spikes may indicate where the business should focus inventory and marketing.
-
-## Business Recommendations
-- Review pricing and discount strategy for low-margin products
-- Reduce deep discounting on already high-demand items
-- Reassess loss-making products or sub-categories
-- Concentrate sales effort on high-margin categories and regions
-- Use monthly trend analysis to support forecasting and campaign planning
+├── data
+├── notebooks
+└── visuals
