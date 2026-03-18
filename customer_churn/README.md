@@ -139,13 +139,13 @@ Based on the analysis, the following actions are recommended:
 
 ### Churn by Contract Type
 
-![Churn by Contract](visuals/churn_by_contract.png)
+![Churn by Contract](viz/churn_by_contract.png)
 
 ---
 
 ### Churn by Tenure
 
-![Churn by Tenure](visuals/churn_by_tenure.png)
+![Churn by Tenure](viz/churn_by_tenure.png)
 
 ---
 
