@@ -147,6 +147,14 @@ Based on the analysis, the following actions are recommended:
 
 ![Churn by Tenure](viz/churn_by_tenure.png)
 
+### Churn by Charges
+
+![Churn by Charges](viz/churn_by_charges.png)
+
+### Churn by Support
+
+![Churn by Support](viz/churn_by_support.png)
+
 ---
 
 ## Project Structure
