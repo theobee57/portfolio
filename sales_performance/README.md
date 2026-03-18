@@ -139,19 +139,19 @@ Sales increase during specific periods (e.g., Q4), suggesting opportunities for 
 
 ### Sales by Region
 
-![Sales by Region](visuals/sales_by_region.png)
+![Sales by Region](viz/sales_by_region.png)
 
 ---
 
 ### Profit by Category
 
-![Profit by Category](visuals/profit_by_category.png)
+![Profit by Category](viz/profit_by_category.png)
 
 ---
 
 ### Monthly Sales Trend
 
-![Monthly Sales Trend](visuals/monthly_sales_trend.png)
+![Monthly Sales Trend](viz/monthly_sales_trend.png)
 
 ---
 
