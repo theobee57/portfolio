@@ -1,6 +1,6 @@
 # Theo Acquah — Data Analytics Portfolio
 
-![Portfolio Banner](images/portfolio_banner.png)
+![Portfolio Banner](images/Theo-Github-Banner.png)
 
 Data Analyst specializing in **enterprise analytics, financial performance, portfolio intelligence, and business-focused data storytelling**.
 
@@ -67,7 +67,7 @@ Business-focused Python analysis exploring revenue drivers, profitability, disco
 Python project analyzing customer churn behavior to identify risk drivers, customer segments with elevated churn probability, and actions to improve retention.
 
 **Key Skills:** Python, exploratory data analysis, feature analysis, churn analytics, business insights  
-[View Project](customer-churn-analysis/)
+[View Project](healthNchurn/)
 
 ---
 
@@ -78,7 +78,7 @@ Python project analyzing customer churn behavior to identify risk drivers, custo
 Executive dashboard analyzing project portfolio financial condition, delivery risk, resource capacity pressure, and prioritization opportunities across enterprise initiatives.
 
 **Key Skills:** Tableau, portfolio analytics, KPI design, scenario analysis, executive reporting  
-[View Project](ppm-portfolio-risk-analytics/)
+[View Project](ppmanalytics/)
 
 ---
 
@@ -89,7 +89,7 @@ Executive dashboard analyzing project portfolio financial condition, delivery ri
 Operational analytics project identifying blocked revenue, invoice aging, close-cycle bottlenecks, and exception patterns affecting financial readiness.
 
 **Key Skills:** Tableau, ERP analytics, financial operations, bottleneck analysis, business storytelling  
-[View Project](erp-period-close-analytics/)
+[View Project](PPMclose/)
 
 ---
 
@@ -100,7 +100,7 @@ Operational analytics project identifying blocked revenue, invoice aging, close-
 Control-tower style analytics solution providing visibility from project cost capture through billing, SLA, and GL posting to support operational control and financial governance.
 
 **Key Skills:** Tableau, ERP lifecycle analytics, intercompany billing, audit visibility, KPI design  
-[View Project](intercompany-billing-control-tower/)
+[View Project](interco)
 
 ---
 
