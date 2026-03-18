@@ -107,17 +107,17 @@ Control-tower style analytics solution providing visibility from project cost ca
 ## Portfolio Structure
 
 ```text
-data-analytics-portfolio
-│
-├── README.md
-├── images
-│   └── portfolio_banner.png
-│
-├── sales-performance-analysis
-├── customer-churn-analysis
-├── ppm-portfolio-risk-analytics
-├── erp-period-close-analytics
-└── intercompany-billing-control-tower
+data-analytics-portfolio/
+│/
+├── README.md /
+├── images /
+│   └── portfolio_banner.png /
+│ /
+├── sales-performance-analysis /
+├── customer-churn-analysis /
+├── ppm-portfolio-risk-analytics /
+├── erp-period-close-analytics /
+└── intercompany-billing-control-tower /
 
 
 
