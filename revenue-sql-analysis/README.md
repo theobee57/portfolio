@@ -181,11 +181,3 @@ This project demonstrates:
 
 ---
 
-## Suggested Next Step
-
-A strong extension of this project would be to load the SQL outputs into Tableau and create a:
-- Revenue Leakage Dashboard
-- Billing Efficiency Scorecard
-- Exception Control Tower
-
-That would create a very strong SQL + Tableau portfolio combination.
