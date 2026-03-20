@@ -104,9 +104,7 @@ Control-tower style analytics solution providing visibility from project cost ca
 
 ---
 
-├── ppm-portfolio-risk-analytics /
-├── erp-period-close-analytics /
-└── intercompany-billing-control-tower /
+### 6) 
 
 
 
