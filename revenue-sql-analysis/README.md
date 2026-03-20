@@ -127,7 +127,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### KPI Summary
 
-![KPI Summary](visuals/kpi_summary.png)
+![KPI Summary](viz/kpi_summary.png)
 
 **Insight:** Billing efficiency varies significantly across business units, indicating inconsistent billing processes and potential operational bottlenecks.
 
@@ -135,7 +135,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### Unbilled Exposure by Business Unit
 
-![Unbilled Exposure](visuals/unbilled_exposure.png)
+![Unbilled Exposure](viz/unbilled_exposure.png)
 
 **Insight:** A disproportionate share of revenue remains unbilled in certain business units, highlighting areas where billing backlog is concentrated.
 
@@ -143,7 +143,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### Aging Analysis
 
-![Aging Analysis](visuals/aging_analysis.png)
+![Aging Analysis](viz/aging_analysis.png)
 
 **Insight:** A large portion of unbilled transactions falls into older aging buckets (60+ days), increasing the risk of delayed or lost revenue.
 
@@ -151,7 +151,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### GL Posting Exceptions
 
-![GL Exceptions](visuals/gl_exceptions.png)
+![GL Exceptions](viz/gl_exceptions.png)
 
 **Insight:** Some billed transactions have not been posted to the general ledger, creating gaps between operational billing and financial reporting.
 
@@ -161,7 +161,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### Running Project Cost (Window Function)
 
-![Running Project Cost](visuals/running_project_cost.png)
+![Running Project Cost](viz/running_project_cost.png)
 
 **Insight:** Project costs accumulate steadily over time, demonstrating how delays in billing can cause a growing gap between incurred cost and recognized revenue.
 
@@ -169,7 +169,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### Top Ranked Projects by Unbilled Exposure
 
-![Top Unbilled Projects](visuals/top_unbilled_projects.png)
+![Top Unbilled Projects](viz/top_unbilled_projects.png)
 
 **Insight:** A small number of projects account for a large share of unbilled exposure, suggesting targeted intervention could significantly reduce backlog.
 
@@ -177,7 +177,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### Project Billing Rate vs BU Average
 
-![Billing Rate vs BU Average](visuals/billing_rate_vs_bu_avg.png)
+![Billing Rate vs BU Average](viz/billing_rate_vs_bu_avg.png)
 
 **Insight:** Several projects fall below their business unit’s average billing rate, indicating underperformance and potential process inefficiencies.
 
