@@ -2,146 +2,203 @@
 
 ## Overview
 
-This project uses SQL to analyze revenue leakage and billing efficiency across an ERP-style project billing lifecycle. The goal is to identify where revenue is getting delayed, blocked, or lost between cost capture, billing, accounting, and GL posting.
+This project analyzes revenue leakage and billing efficiency across an ERP-style project lifecycle using SQL.
 
-It is designed to simulate the type of enterprise analysis performed in Oracle Cloud PPM / ERP environments.
+The objective is to identify where revenue is delayed, blocked, or lost between cost capture, billing, accounting, and general ledger posting.
+
+The analysis simulates real-world enterprise scenarios commonly encountered in Oracle Cloud PPM / ERP environments.
 
 ---
 
 ## Business Problem
 
-In project-based organizations, costs may be incurred on time while billing and accounting lag behind. This creates revenue leakage, delayed invoicing, and weak financial visibility.
+In project-based organizations, costs are often incurred before billing and accounting processes are completed.
 
-This project answers questions such as:
+This creates:
 
-- How much value is still unbilled?
-- Which business units have the highest billing leakage?
-- Where are transactions getting stuck in Draft or On Hold status?
-- Which billed transactions have not yet been posted to GL?
-- What is the aging profile of unbilled costs?
+- delayed revenue recognition
+- reduced financial visibility
+- operational inefficiencies
+
+This project answers key business questions:
+
+- How much revenue remains unbilled?
+- Where are billing bottlenecks occurring?
+- Which transactions are not reaching the general ledger?
+- How long are transactions aging before billing?
 
 ---
 
 ## Dataset
 
-This project includes four related tables:
+The analysis uses four related tables:
 
-### 1. `projects.csv`
-Project master data:
-- `project_id`
-- `project_name`
-- `business_unit`
-- `legal_entity`
-- `project_type`
-- `project_status`
-- `manager_name`
-- `customer_name`
-- `start_date`
+- **projects** — project and organizational data
+- **costs** — cost transactions
+- **billing** — billing lifecycle status
+- **accounting** — accounting and GL posting
 
-### 2. `costs.csv`
-Cost transactions captured against projects:
-- `cost_id`
-- `project_id`
-- `cost_date`
-- `cost_type`
-- `cost_amount`
-- `cost_status`
-- `billable_flag`
-
-### 3. `billing.csv`
-Billing lifecycle status for each cost transaction:
-- `billing_id`
-- `cost_id`
-- `project_id`
-- `billing_status`
-- `billed_amount`
-- `billed_date`
-- `invoice_status`
-
-### 4. `accounting.csv`
-Accounting and GL posting outcomes:
-- `accounting_id`
-- `cost_id`
-- `project_id`
-- `accounting_status`
-- `gl_posted_flag`
-- `accounting_date`
+These tables simulate real ERP data structures with realistic lifecycle behavior.
 
 ---
 
-## Tools Used
+## Tools & Techniques
 
-- SQL
-- CSV datasets
-- ERP / Oracle-style business logic
-- Relational joins
-- Aggregations
+- SQL (PostgreSQL-compatible syntax)
+- Multi-table joins
+- Aggregations and KPI calculations
 - Window functions
+- Analytical modeling
+- DataLab (DataCamp) / DuckDB-based SQL workflow
 
 ---
 
 ## Analysis Approach
 
-The project is organized into SQL scripts covering:
+The project is structured into four analytical layers:
 
-### KPI Queries
-Core business metrics such as:
-- total cost amount
-- total billed amount
+### 1. KPI Analysis
+- total cost
+- total billed
 - billing rate
-- unbilled exposure by business unit
+- unbilled exposure
 
-### Exception Analysis
-Identification of:
-- billed transactions not posted to GL
+### 2. Exception Analysis
 - Draft and On Hold transactions
-- projects with highest exception volume
+- billed but not posted to GL
 
-### Aging Analysis
-Breakdown of unbilled cost into aging buckets:
+### 3. Aging Analysis
 - 0–30 days
 - 31–60 days
 - 61–90 days
 - 90+ days
 
-### Window Functions
-Advanced SQL techniques used to:
-- calculate running project cost
-- rank projects by unbilled exposure
-- compare project billing rate to business-unit average
+### 4. Advanced SQL (Window Functions)
+- running totals
+- project ranking
+- benchmarking vs business unit average
 
 ---
 
-## Key Insights You Can Expect
+## Key Insights
 
-Typical findings from this dataset include:
+### 1. Significant Revenue Remains Unbilled
 
-- A meaningful share of cost is trapped in Draft or On Hold billing status
-- Some business units carry much higher unbilled exposure than others
-- A subset of billed transactions remains unposted to GL, creating accounting delays
-- Older transactions accumulate disproportionately in the 90+ day bucket
-- Window functions reveal which projects are outliers within each business unit
+A portion of cost transactions remains in **Draft or On Hold status**, delaying revenue realization and impacting cash flow.
+
+### 2. Billing Efficiency Varies by Business Unit
+
+Some business units demonstrate lower billing rates, indicating operational inefficiencies or process delays.
+
+### 3. GL Posting Delays Reduce Financial Visibility
+
+A subset of billed transactions has not been posted to the general ledger, creating gaps in financial reporting.
+
+### 4. Aging Risk Concentrated in Older Buckets
+
+Unbilled transactions accumulate in the **90+ day bucket**, increasing the risk of permanent revenue leakage.
+
+### 5. High-Risk Projects Identified via Ranking
+
+Window-function analysis highlights projects with the highest unbilled exposure within each business unit.
 
 ---
 
 ## Business Recommendations
 
-Based on the analysis, likely recommendations include:
-
 ### 1. Reduce Draft / On Hold Backlog
-Prioritize high-value stuck transactions and define SLA targets for billing completion.
+Prioritize high-value transactions and enforce billing SLAs.
 
-### 2. Monitor GL Posting Delays
-Track billed-but-unposted transactions separately to improve accounting transparency.
+### 2. Improve GL Posting Timeliness
+Track billed-but-unposted transactions as a separate KPI.
 
-### 3. Escalate Aged Unbilled Costs
-Review 90+ day items regularly to prevent revenue leakage from becoming permanent.
+### 3. Monitor Aging Regularly
+Escalate items older than 60–90 days.
 
 ### 4. Benchmark Business Units
-Use billing rate and exception volume to identify underperforming teams.
+Use billing efficiency metrics to identify underperforming teams.
 
-### 5. Create an Exception Dashboard
-Turn these SQL outputs into a Tableau or Power BI dashboard for finance and operations leadership.
+### 5. Implement an Exception Control Dashboard
+Provide real-time visibility into billing lifecycle issues.
+
+---
+
+## Key Outputs
+
+### KPI Summary
+
+![KPI Summary](visuals/kpi_summary.png)
+
+**Insight:** Billing efficiency varies significantly across business units, indicating inconsistent billing processes and potential operational bottlenecks.
+
+---
+
+### Unbilled Exposure by Business Unit
+
+![Unbilled Exposure](visuals/unbilled_exposure.png)
+
+**Insight:** A disproportionate share of revenue remains unbilled in certain business units, highlighting areas where billing backlog is concentrated.
+
+---
+
+### Aging Analysis
+
+![Aging Analysis](visuals/aging_analysis.png)
+
+**Insight:** A large portion of unbilled transactions falls into older aging buckets (60+ days), increasing the risk of delayed or lost revenue.
+
+---
+
+### GL Posting Exceptions
+
+![GL Exceptions](visuals/gl_exceptions.png)
+
+**Insight:** Some billed transactions have not been posted to the general ledger, creating gaps between operational billing and financial reporting.
+
+---
+
+## Advanced SQL Visualizations
+
+### Running Project Cost (Window Function)
+
+![Running Project Cost](visuals/running_project_cost.png)
+
+**Insight:** Project costs accumulate steadily over time, demonstrating how delays in billing can cause a growing gap between incurred cost and recognized revenue.
+
+---
+
+### Top Ranked Projects by Unbilled Exposure
+
+![Top Unbilled Projects](visuals/top_unbilled_projects.png)
+
+**Insight:** A small number of projects account for a large share of unbilled exposure, suggesting targeted intervention could significantly reduce backlog.
+
+---
+
+### Project Billing Rate vs BU Average
+
+![Billing Rate vs BU Average](visuals/billing_rate_vs_bu_avg.png)
+
+**Insight:** Several projects fall below their business unit’s average billing rate, indicating underperformance and potential process inefficiencies.
+
+---
+
+## SQL Queries
+
+All SQL logic used in this project is available in the `sql/` folder.
+
+Included scripts:
+
+- `schema.sql`
+- `kpi_queries.sql`
+- `exception_analysis.sql`
+- `aging_analysis.sql`
+- `window_functions.sql`
+
+These scripts include:
+- one-line internal documentation at the top of each query
+- business-friendly output aliases
+- PostgreSQL-compatible SQL syntax
 
 ---
 
@@ -151,33 +208,25 @@ Turn these SQL outputs into a Tableau or Power BI dashboard for finance and oper
 revenue-leakage-sql-analysis
 │
 ├── README.md
+├── QUICK_START.txt
 ├── data
 │   ├── projects.csv
 │   ├── costs.csv
 │   ├── billing.csv
 │   └── accounting.csv
 │
-└── sql
-    ├── schema.sql
-    ├── kpi_queries.sql
-    ├── exception_analysis.sql
-    ├── aging_analysis.sql
-    └── window_functions.sql
-```
-
----
-
-## Portfolio Value
-
-This project demonstrates:
-
-- multi-table SQL analysis
-- joins across ERP-style datasets
-- aggregation and KPI logic
-- exception detection
-- aging analysis
-- window functions
-- business-focused interpretation of SQL outputs
-
----
-
+├── sql
+│   ├── schema.sql
+│   ├── kpi_queries.sql
+│   ├── exception_analysis.sql
+│   ├── aging_analysis.sql
+│   └── window_functions.sql
+│
+└── visuals
+    ├── kpi_summary.png
+    ├── unbilled_exposure.png
+    ├── aging_analysis.png
+    ├── gl_exceptions.png
+    ├── running_project_cost.png
+    ├── top_unbilled_projects.png
+    └── billing_rate_vs_bu_avg.png
