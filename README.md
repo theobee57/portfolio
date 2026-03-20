@@ -104,7 +104,9 @@ Control-tower style analytics solution providing visibility from project cost ca
 
 ---
 
-### 6) 
+### 6) Revenue Leakage & Billing Efficiency Analysis (SQL)
 
+Using SQL to analyze ERP data to provide actionable financial and operational insights.
 
-
+**Key Skills:** SQL, Advanced queries (Table functions, Window functions, etc.), KPI engineering  
+[View Project](interco)
