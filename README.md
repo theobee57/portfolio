@@ -62,7 +62,7 @@ Business-focused Python analysis exploring revenue drivers, profitability, disco
 
 ### 2) Customer Churn Risk Analysis (Python)
 
-![Customer Churn Analysis](customer-churn-analysis/visuals/churn_by_contract.png)
+![Customer Churn Analysis](customer_churn/viz/churn_by_contract.png)
 
 Python project analyzing customer churn behavior to identify risk drivers, customer segments with elevated churn probability, and actions to improve retention.
 
