@@ -67,7 +67,7 @@ Business-focused Python analysis exploring revenue drivers, profitability, disco
 Python project analyzing customer churn behavior to identify risk drivers, customer segments with elevated churn probability, and actions to improve retention.
 
 **Key Skills:** Python, exploratory data analysis, feature analysis, churn analytics, business insights  
-[View Project](healthNchurn/)
+[View Project](customer_churn/)
 
 ---
 
