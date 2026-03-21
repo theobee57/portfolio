@@ -105,7 +105,6 @@ Control-tower style analytics solution providing visibility from project cost ca
 ---
 
 ### 6) Revenue Leakage & Billing Efficiency Analysis (SQL)
-
 ### KPI Summary
 ![KPI Summary](revenue-sql-analysis/viz/kpi_summary.png)
 
