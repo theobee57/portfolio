@@ -51,7 +51,7 @@ My portfolio focuses on:
 
 ### 1) Sales Performance & Profitability Analysis (Python)
 
-![Sales Performance Analysis](sales_performanc/viz/sales_by_region.png)
+![Sales Performance Analysis](sales_performance/viz/sales_by_region.png)
 
 Business-focused Python analysis exploring revenue drivers, profitability, discount impact, and product performance across regions and customer segments.
 
