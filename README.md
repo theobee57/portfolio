@@ -95,7 +95,7 @@ Operational analytics project identifying blocked revenue, invoice aging, close-
 
 ### 5) Intercompany Billing Control Tower (Tableau)
 
-![Intercompany Billing Control Tower](interc/images/dashboard.png)
+![Intercompany Billing Control Tower](interco/images/dashboard1_executive_overview.png)
 
 Control-tower style analytics solution providing visibility from project cost capture through billing, SLA, and GL posting to support operational control and financial governance.
 
