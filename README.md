@@ -84,7 +84,7 @@ Executive dashboard analyzing project portfolio financial condition, delivery ri
 
 ### 4) ERP Period Close Bottleneck Analysis (Tableau)
 
-![PPM Period Close Analysis](PPMclose/images/ppmClose_dashboard1_header.png.png)
+![PPM Period Close Analysis](PPMclose/images/ppmClose_dashboard1_full.png.png)
 
 Operational analytics project identifying blocked revenue, invoice aging, close-cycle bottlenecks, and exception patterns affecting financial readiness.
 
