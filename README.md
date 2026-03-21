@@ -73,7 +73,7 @@ Python project analyzing customer churn behavior to identify risk drivers, custo
 
 ### 3) Executive Project Portfolio Performance & Risk Analytics (Tableau)
 
-![Portfolio Risk Dashboard](ppm-portfolio-risk-analytics/visuals/dashboard.png)
+![Portfolio Risk Dashboard](ppmanalytics/viz/dashboard.png)
 
 Executive dashboard analyzing project portfolio financial condition, delivery risk, resource capacity pressure, and prioritization opportunities across enterprise initiatives.
 
