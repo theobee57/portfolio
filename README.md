@@ -1,4 +1,4 @@
-# Theo Acquah — Data Analytics Portfolio
+# Theo Acquah — Data Analytics
 
 ![Portfolio Banner](images/Theo-Github-Banner.png)
 
