@@ -56,7 +56,7 @@ My portfolio focuses on:
 Business-focused Python analysis exploring revenue drivers, profitability, discount impact, and product performance across regions and customer segments.
 
 **Key Skills:** Python, pandas, KPI analysis, profitability analysis, data visualization, business recommendations  
-[View Project](sales-performance-analysis/)
+[View Project](sales_performance/)
 
 ---
 
