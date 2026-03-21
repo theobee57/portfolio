@@ -4,7 +4,7 @@
 
 Data Analyst specializing in **enterprise analytics, financial performance, portfolio intelligence, and business-focused data storytelling**.
 
-This portfolio showcases projects built with **Python, SQL, Tableau, and Oracle Cloud PPM/ERP-style data**. The work focuses on solving real business problems through KPI design, dashboarding, exploratory analysis, and actionable recommendations.
+This portfolio showcases projects built with **Python, SQL, Tableau, and Oracle Cloud PPM/ERP data**. The work focuses on solving real business problems through KPI design, dashboarding, exploratory analysis, and actionable recommendations.
 
 ---
 
@@ -23,7 +23,7 @@ My portfolio focuses on:
 
 ## Tools & Technologies
 
-- **Python**: pandas, numpy, matplotlib
+- **Python**: pandas, numpy, matplotlib, scikit-learn
 - **SQL**
 - **Tableau**
 - **Oracle Cloud PPM / ERP Analytics**
