@@ -151,7 +151,7 @@ Provide real-time visibility into billing lifecycle issues.
 
 ### GL Posting Exceptions
 
-![GL Exceptions](viz/gl_exceptions.png)
+![GL Exceptions](viz/exception_analysis.png)
 
 **Insight:** Some billed transactions have not been posted to the general ledger, creating gaps between operational billing and financial reporting.
 
